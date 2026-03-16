@@ -23,7 +23,7 @@
     <section id="sobre">
         <h2>Sobre mim</h2>
 
-        <img src="PoringDG.png" alt="foto de perfil"title="Imagem do Homi metade tatu,metade jacaré">
+        <img src="PoringCard.png" alt="foto de perfil" title="Imagem do Homi metade tatu,metade jacaré">
         <article>
             <p>Ola! Sou o Vinicius, e sou um estudante, porem futuro programador!!!</p>
         </article>
@@ -49,21 +49,44 @@
     </section>
     <footer>
         <p>Direitos reservados a Vinicius</p>
+
         <section id="contato">
+            <h2>Contato:</h2>
+            <p>Tem um projeto em mente? Entre em contato!!!</p>
 
-            <h2>Contado:</h2>
-            <p>Tem um projeto em mente? Entre em contato!</p>
+            <form action="">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required> <br>
 
-            <address>
-                E-mail:<a
-                    href="mailto:vinibastos31@gmail.com?subject=Problema%20com%20os%20ramais">vinibastos31@gmail.com</a>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required> <br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" > <br>
+
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+                
+                
                 <br>
-                Telefone: <a href="tel:5548999234968">55+ (48) 99923-4968</a>
-            </address>
+              
 
+                <label for="menssagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5" required></textarea>
+                <br>
+
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro</label>
+
+                <br>
+
+                <input type="submit" value="Enviar mensagem">
+
+
+            </form>
         </section>
     </footer>
-
-</body>
-
-</html>
